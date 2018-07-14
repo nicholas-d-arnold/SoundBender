@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row site-header">
+    <div class="col">
+        <h1>Welcome to SoundBlender!</h1>
+    </div>
+</div>
+<br><br>
+<div class="row">
+    <div class="col">
+        <button class="btn btn-secondary" id="play_clip_btn">Play Piano Snippet</button>
+        <button class="btn btn-secondary mute">Mute button</button>
+    </div>
+</div>
+<br />
+<div class="row">
+    <audio controls>
+        <source src="~/audiofiles/Slither.wav" type="audio/Wav">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+<script src="~/js/music.js"></script>

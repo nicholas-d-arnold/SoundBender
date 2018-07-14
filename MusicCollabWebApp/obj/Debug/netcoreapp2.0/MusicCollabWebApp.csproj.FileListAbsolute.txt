@@ -1,0 +1,36 @@
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.deps.json
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.runtimeconfig.json
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.runtimeconfig.dev.json
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.dll
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.pdb
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.csprojAssemblyReference.cache
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.csproj.CoreCompileInputs.cache
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.AssemblyInfoInputs.cache
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.AssemblyInfo.cs
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.dll
+C:\Users\abomb\Desktop\Music Site\MusicCollabWebApp\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.pdb
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.deps.json
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.runtimeconfig.json
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.runtimeconfig.dev.json
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.dll
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.pdb
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.csprojAssemblyReference.cache
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.csproj.CoreCompileInputs.cache
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.AssemblyInfoInputs.cache
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.AssemblyInfo.cs
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.dll
+C:\Users\abomb\Desktop\New folder (3)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.pdb
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.deps.json
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.runtimeconfig.json
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.runtimeconfig.dev.json
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.dll
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.pdb
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.csprojAssemblyReference.cache
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.csproj.CoreCompileInputs.cache
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.AssemblyInfoInputs.cache
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.AssemblyInfo.cs
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.dll
+C:\Users\abomb\Desktop\New folder (4)\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.pdb
