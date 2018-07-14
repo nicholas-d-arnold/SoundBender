@@ -13359,11 +13359,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abomb\\Desktop\\New folder (4)\\MusicCollabWebApp\\MusicCollabWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\abomb\\Desktop\\New folder (5)\\SoundBender\\MusicCollabWebApp\\MusicCollabWebApp.csproj",
       "projectName": "MusicCollabWebApp",
-      "projectPath": "C:\\Users\\abomb\\Desktop\\New folder (4)\\MusicCollabWebApp\\MusicCollabWebApp.csproj",
+      "projectPath": "C:\\Users\\abomb\\Desktop\\New folder (5)\\SoundBender\\MusicCollabWebApp\\MusicCollabWebApp.csproj",
       "packagesPath": "C:\\Users\\abomb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abomb\\Desktop\\New folder (4)\\MusicCollabWebApp\\obj\\",
+      "outputPath": "C:\\Users\\abomb\\Desktop\\New folder (5)\\SoundBender\\MusicCollabWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
