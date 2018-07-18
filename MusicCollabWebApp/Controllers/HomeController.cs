@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -30,10 +31,16 @@ namespace MusicCollabWebApp.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult UploadFile(UploadFileModel model)
+        public async Task<IActionResult> UploadFile(UploadFileModel model)
         {
-
-            return View();
+            var path = Path.Combine(
+                        Directory.GetCurrentDirectory(), "wwwroot/audiofiles",
+                        model.File.FileName);
+            using (var fileStream = new FileStream(path, FileMode.Create))
+            {
+                await model.File.CopyToAsync(fileStream);
+            }
+            return View("Index");
         }
 
         public IActionResult Error()

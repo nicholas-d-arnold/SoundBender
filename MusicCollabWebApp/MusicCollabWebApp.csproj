@@ -27,4 +27,8 @@
     <None Include="wwwroot\audiofiles\Slither.wav" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Media\" />
+  </ItemGroup>
+
 </Project>
