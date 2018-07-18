@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MusicCollabWebApp.Models;
 
@@ -22,9 +23,15 @@ namespace MusicCollabWebApp.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult UploadFile()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Upload an audio file here.";
+
+            return View();
+        }
+        [HttpPost]
+        public IActionResult UploadFile(UploadFileModel model)
+        {
 
             return View();
         }
