@@ -12,16 +12,19 @@
 <div class="row">
     <div class="col">
         <button class="btn btn-secondary" id="play_clip_btn">Play Piano Snippet</button>
-        <button class="btn btn-secondary mute">Mute button</button>
+        <button class="btn btn-secondary mute">Mute button</button><br />
+        <button id="deviceBtn" class="btn btn-secondary">Choose recording device</button>
+        
     </div>
 </div>
 <br />
 <div class="row">
-    <audio controls>
-        <source src="~/audiofiles/01 The Package.mp3" type="audio/mp3">
-        <source src="horse.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+    <button id="record" disabled>Record audio</button> <button id="stop" disabled>Stop</button><br />
+    <audio id="audio" controls></audio>
 </div>
 
+@section Scripts{
+<script src="~/js/recorder.js" type="text/javascript"></script>
+
 <script src="~/js/music.js"></script>
+}
