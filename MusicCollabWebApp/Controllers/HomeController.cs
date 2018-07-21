@@ -42,7 +42,24 @@ namespace MusicCollabWebApp.Controllers
             }
             return View("Index");
         }
+        public IActionResult RecordFile()
+        {
 
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RecordFile(UploadFileModel model)
+        {
+            var path = Path.Combine(
+                        Directory.GetCurrentDirectory(), "wwwroot/audiofiles",
+                        model.File.FileName);
+            using (var fileStream = new FileStream(path, FileMode.Create))
+            {
+                await model.File.CopyToAsync(fileStream);
+            }
+            return Json(Url.Action("Index"));
+        }
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

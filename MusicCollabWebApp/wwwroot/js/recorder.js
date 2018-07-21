@@ -5,19 +5,19 @@
 // MediaRecorder.stop -> stop recording (this will generate a blob of data)
 // URL.createObjectURL -> to create a URL from a blob, which we can use as audio src
 
-var recordButton, stopButton, recorder;
+var recordButton, stopButton, recorder, audio;
 
 window.onload = function () {
     recordButton = document.getElementById('record');
     stopButton = document.getElementById('stop');
     choosedeviceBtn = document.getElementById('deviceBtn');
-
+    audio = document.getElementById('audio');
     // get audio stream from user's mic
-    
-        navigator.mediaDevices.getUserMedia({
-            audio: true
-        })
-    
+
+    navigator.mediaDevices.getUserMedia({
+        audio: true
+    })
+
         .then(function (stream) {
             recordButton.disabled = false;
             recordButton.addEventListener('click', startRecording);
@@ -28,26 +28,62 @@ window.onload = function () {
             // an audio blob available
             recorder.addEventListener('dataavailable', onRecordingReady);
         });
-    };
+};
 
-    function startRecording() {
-        recordButton.disabled = true;
-        stopButton.disabled = false;
+function startRecording() {
+    recordButton.disabled = true;
+    stopButton.disabled = false;
 
-        recorder.start();
+    recorder.start();
+}
+
+function stopRecording() {
+    recordButton.disabled = false;
+    stopButton.disabled = true;
+
+    // Stopping the recorder will eventually trigger the `dataavailable` event and we can complete the recording process
+    recorder.stop();
+}
+
+function onRecordingReady(e) {
+    
+    // e.data contains a blob representing the recording
+    var audioFile = URL.createObjectURL(e.data);
+    audio.src = URL.createObjectURL(e.data);
+    audio.play();
+    
+    saveit();
+}
+
+function saveit() {
+    var fileData = new FormData();
+    fetch(audio.src).then(response => response.blob())
+        .then(blob => {
+        fileData.append("file", blob, "file.mp3");
+        fileData.append('name', "test");
+        fileData.append("description", "something here");
+        return fetch("/Home/RecordFile", { method: "POST", body: fd })
+    })
+    debugger;
+     //let's do a vanilla JS ajax xhr call, why not?
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/Home/RecordFile');
+    xhr.send(fileData);
+    xhr.onreadystatechange = function (data) {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            window.location.href = data;
+        }
     }
 
-    function stopRecording() {
-        recordButton.disabled = false;
-        stopButton.disabled = true;
+    //$.ajax({
+    //    method: 'POST',
+    //    data: fileData,
+    //    url: "/Home/RecordFile",
+    //    datatype: "json",
+    //    success(data) {
+            
+    //        window.location.href = data;
+    //    }
 
-        // Stopping the recorder will eventually trigger the `dataavailable` event and we can complete the recording process
-        recorder.stop();
-    }
-
-    function onRecordingReady(e) {
-        var audio = document.getElementById('audio');
-        // e.data contains a blob representing the recording
-        audio.src = URL.createObjectURL(e.data);
-        audio.play();
-    }
+    //});
+}
