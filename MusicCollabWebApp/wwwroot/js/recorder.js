@@ -13,11 +13,11 @@ window.onload = function () {
     choosedeviceBtn = document.getElementById('deviceBtn');
 
     // get audio stream from user's mic
-    choosedeviceBtn.addEventListener('click', function () {
+    
         navigator.mediaDevices.getUserMedia({
             audio: true
         })
-    })
+    
         .then(function (stream) {
             recordButton.disabled = false;
             recordButton.addEventListener('click', startRecording);
