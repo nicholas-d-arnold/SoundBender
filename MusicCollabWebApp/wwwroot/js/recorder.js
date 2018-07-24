@@ -61,26 +61,28 @@ function saveit() {
         .then(blob => {
         fileData.append("file", blob, "file.mp3");
         fileData.append('name', "test");
-        fileData.append("description", "something here");
-        return fetch("/Home/RecordFile", { method: "POST", body: fd })
+            fileData.append("description", "something here");
+            return fetch("/Home/RecordFile", { method: "POST", body: fd })
     })
-    debugger;
-     //let's do a vanilla JS ajax xhr call, why not?
+    
+    // let's do a vanilla JS ajax xhr call, why not?
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/Home/RecordFile');
+    xhr.open('POST', '/Home/RecordFile', true);
     xhr.send(fileData);
-    xhr.onreadystatechange = function (data) {
+    xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            window.location.href = data;
+            alert(xhr.responseText);
+            var respJson = JSON.parse(resp);
         }
     }
 
     //$.ajax({
+    //    async: false,
     //    method: 'POST',
     //    data: fileData,
     //    url: "/Home/RecordFile",
     //    datatype: "json",
-    //    success(data) {
+    //    success: function(data) {
             
     //        window.location.href = data;
     //    }

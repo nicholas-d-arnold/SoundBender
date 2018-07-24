@@ -58,7 +58,7 @@ namespace MusicCollabWebApp.Controllers
             {
                 await model.File.CopyToAsync(fileStream);
             }
-            return Json(Url.Action("Index"));
+            return Json(Url.Action("Index", "Home"));
         }
         public IActionResult Error()
         {
