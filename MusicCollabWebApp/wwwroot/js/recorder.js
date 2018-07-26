@@ -59,33 +59,35 @@ function saveit() {
     var fileData = new FormData();
     fetch(audio.src).then(response => response.blob())
         .then(blob => {
-        fileData.append("file", blob, "file.mp3");
-        fileData.append('name', "test");
+            fileData.append("file", blob, "file.mp3");
+            fileData.append('name', "test");
             fileData.append("description", "something here");
             return fetch("/Home/RecordFile", { method: "POST", body: fd })
-    })
-    
+        })
+
     // let's do a vanilla JS ajax xhr call, why not?
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/Home/RecordFile', true);
-    xhr.send(fileData);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            alert(xhr.responseText);
-            var respJson = JSON.parse(resp);
-        }
-    }
-
-    //$.ajax({
-    //    async: false,
-    //    method: 'POST',
-    //    data: fileData,
-    //    url: "/Home/RecordFile",
-    //    datatype: "json",
-    //    success: function(data) {
-            
-    //        window.location.href = data;
+    //var xhr = new XMLHttpRequest();
+    //xhr.open('POST', '/Home/RecordFile', true);
+    //xhr.send(fileData);
+    //xhr.onreadystatechange = function () {
+    //    if (xhr.readyState == 4 && xhr.status == 200) {
+    //        alert(xhr.responseText);
+    //        var respJson = JSON.parse(resp);
     //    }
+    //}
+    setTimeout(function () {
+        $.ajax({
+            //async: false,
+            method: 'POST',
+            data: fileData,
+            url: "/Home/RecordFile",
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                
+                window.location.href = data;
+            }
 
-    //});
+        })
+    }, 2000);
 }

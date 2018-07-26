@@ -11,7 +11,7 @@ mute_btn.addEventListener('click', voiceMute);
 
 var request = new XMLHttpRequest();
 
-request.open('GET', '/audiofiles/Slither.wav', true);
+request.open('GET', '/audiofiles/file.mp3', true);
 
 request.responseType = 'arraybuffer';
 
