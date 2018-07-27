@@ -65,6 +65,7 @@ function saveit() {
             return fetch("/Home/RecordFile", { method: "POST", body: fd })
         })
 
+
     // let's do a vanilla JS ajax xhr call, why not?
     //var xhr = new XMLHttpRequest();
     //xhr.open('POST', '/Home/RecordFile', true);
@@ -77,7 +78,6 @@ function saveit() {
     //}
     setTimeout(function () {
         $.ajax({
-            //async: false,
             method: 'POST',
             data: fileData,
             url: "/Home/RecordFile",
