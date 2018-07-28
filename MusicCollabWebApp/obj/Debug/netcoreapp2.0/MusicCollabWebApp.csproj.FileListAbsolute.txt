@@ -41,8 +41,8 @@ C:\Users\abomb\Desktop\New folder (5)\SoundBender\MusicCollabWebApp\bin\Debug\ne
 C:\Users\abomb\Desktop\New folder (5)\SoundBender\MusicCollabWebApp\bin\Debug\netcoreapp2.0\MusicCollabWebApp.pdb
 C:\Users\abomb\Desktop\New folder (5)\SoundBender\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.csprojAssemblyReference.cache
 C:\Users\abomb\Desktop\New folder (5)\SoundBender\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.csproj.CoreCompileInputs.cache
-C:\Users\abomb\Desktop\New folder (5)\SoundBender\MusicCollabWebApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 C:\Users\abomb\Desktop\New folder (5)\SoundBender\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.AssemblyInfoInputs.cache
 C:\Users\abomb\Desktop\New folder (5)\SoundBender\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.AssemblyInfo.cs
 C:\Users\abomb\Desktop\New folder (5)\SoundBender\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.dll
 C:\Users\abomb\Desktop\New folder (5)\SoundBender\MusicCollabWebApp\obj\Debug\netcoreapp2.0\MusicCollabWebApp.pdb
+C:\Users\abomb\Desktop\New folder (5)\SoundBender\MusicCollabWebApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
