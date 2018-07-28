@@ -52,7 +52,7 @@ function onRecordingReady(e) {
     audio.src = URL.createObjectURL(e.data);
     audio.play();
     
-    saveit();
+    
 }
 
 function saveit() {
