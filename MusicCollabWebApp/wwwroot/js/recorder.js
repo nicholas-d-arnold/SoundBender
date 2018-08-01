@@ -46,48 +46,28 @@ function stopRecording() {
 }
 
 function onRecordingReady(e) {
-    
+
     // e.data contains a blob representing the recording
     var audioFile = URL.createObjectURL(e.data);
     audio.src = URL.createObjectURL(e.data);
     audio.play();
-    
-    
+
+    saveit();
 }
 
 function saveit() {
+
     var fileData = new FormData();
+    // fetch can make a request to the server and uses promises
     fetch(audio.src).then(response => response.blob())
         .then(blob => {
-            fileData.append("file", blob, "file.mp3");
+            fileData.append("file", blob, "file.ogg");
             fileData.append('name', "test");
             fileData.append("description", "something here");
-            return fetch("/Home/RecordFile", { method: "POST", body: fd })
+            return fetch("/Home/RecordFile", { method: "POST", body: fileData })
         })
 
 
-    // let's do a vanilla JS ajax xhr call, why not?
-    //var xhr = new XMLHttpRequest();
-    //xhr.open('POST', '/Home/RecordFile', true);
-    //xhr.send(fileData);
-    //xhr.onreadystatechange = function () {
-    //    if (xhr.readyState == 4 && xhr.status == 200) {
-    //        alert(xhr.responseText);
-    //        var respJson = JSON.parse(resp);
-    //    }
-    //}
-    setTimeout(function () {
-        $.ajax({
-            method: 'POST',
-            data: fileData,
-            url: "/Home/RecordFile",
-            processData: false,
-            contentType: false,
-            success: function (data) {
-                
-                window.location.href = data;
-            }
 
-        })
-    }, 2000);
+            
 }
